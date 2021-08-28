@@ -1,8 +1,10 @@
-from fastapi import FastAPI 
+from fastapi import FastAPI
 
-app = FastAPI(title="Job Board", version="0.1.0")
+from core.config import settings
+
+app = FastAPI(title=settings.PROJECT_TITLE, version=settings.PROJECT_VERSION)
 
 
-@app.get('/')
+@app.get("/")
 def hello_api():
     return {"detail": "Hello World!"}

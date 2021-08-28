@@ -2,3 +2,6 @@ fastapi
 uvicorn
 black
 isort
+sqlalchemy
+psycopg2
+python-dotenv

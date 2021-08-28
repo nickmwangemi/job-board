@@ -1,10 +1,9 @@
-from fastapi import FastAPI
-
 from apis.base import api_router
 from apis.v1.routes.users import router
 from core.config import settings
 from db.base import Base
 from db.session import engine
+from fastapi import FastAPI
 
 
 def create_tables():

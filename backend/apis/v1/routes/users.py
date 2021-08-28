@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 
 from db.repository.user import create_new_user
 from db.session import get_db
-from schemas.user import UserCreate, ShowUser
+from schemas.user import ShowUser, UserCreate
 
 router = APIRouter()
 
